@@ -4,27 +4,25 @@
 // ! IN BASE AL FATTO CHE TROVI O NO UN ELEMENTO DELL ARRAY CHE VI CORRISPONDE MANDERMO IN OUTPUT
 // ! L' ESITO PER LA RICHIESTA DEL UTENTE DI ENTRARE 
 
-// ? per dopo const emailData=document.getElementById('data-acquisition');
-// ? el.addEventListener("click", modifyText, false);
+const emailUser= prompt(" inserisci la tua email se desideri effettuare l'accesso");
+console.log(emailUser);
 
-// * const emailUser= prompt(" inserisci la tua email se desideri effettuare l'accesso'");
-// * console.log(emailUser);
+const emailList = ['ciccio@gmail.com', 'mario@gmail.com', 'ermengildo@gmail.com'];
+console.log(emailList);
 
-// * const emailList = ['ciccio@gmail.com', 'mario@gmail.com', 'ermengildo@gmail.com'];
-// * console.log(emailList);
-// * let trovato=false;
+let trovato=false;
 
-// *  for (let i = 0; i < emailList.length ; i++) {
-// *      if(emailUser==emailList[i]){
-// *         trovato=true;
-// *      }  
-// *  }
-// *  if(trovato==true){
-// *     console.log('puoi entrare!');
-// *  }
-// *  else{
-// *     console.log('non risulti presente nel database')
-// *  }
+for(let i = 0; i < emailList.length; i++){
+     if(emailUser==emailList[i]){
+        trovato=true;
+     }  
+ }
+ if(trovato==true){
+    console.log('puoi entrare!');
+ }
+ else{
+    console.log('non risulti presente nel database')
+ }
 // ! possibile altra risuluzione dell'esercizio della mail
 // let risultato = emailList.indexOf(emailUser);
 // console.log(risultato);
