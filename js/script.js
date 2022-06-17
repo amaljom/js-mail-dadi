@@ -9,20 +9,25 @@ console.log(emailUser);
 
 const emailList = ['ciccio@gmail.com', 'mario@gmail.com', 'ermengildo@gmail.com'];
 console.log(emailList);
+let trovato=false;
 
-// for (let i = 0; i < emailList.length && !(emailUser==emailList[i])  ; i++) {
-//     if(emailUser==emailList[i]){
-//         console.log('risulti essere presente nel database');
-//     }
-//     else{
-//         console.log('NON PUOI ENTRARE')
-//     }
+ for (let i = 0; i < emailList.length ; i++) {
+     if(emailUser==emailList[i]){
+        trovato=true;
+     }  
+ }
+ if(trovato==true){
+    console.log('puoi entrare!');
+ }
+ else{
+    console.log('non risulti presente nel database')
+ }
+// ! possibile altra risuluzione dell'esercizio della mail
+// let risultato = emailList.indexOf(emailUser);
+// console.log(risultato);
+// if(risultato != -1){
+//     console.log('Puoi entrare');
 // }
-let risultato = emailList.indexOf(emailUser);
-console.log(risultato);
-if(risultato != -1){
-    console.log('Puoi entrare');
-}
-else{
-    console.log('non risulti presente nel database');
-}
+// else{
+//     console.log('non risulti presente nel database');
+// }
